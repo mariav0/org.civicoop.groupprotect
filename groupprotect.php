@@ -68,9 +68,9 @@ function groupprotect_civicrm_pageRun( &$page ) {
  * @link http://wiki.civicrm.org/confluence/display/CRMDOC/hook_civicrm_permission
  */
 function groupprotect_civicrm_permission(&$permissions) {
-  $prefix = E::ts('CiviCRM Group Protect') . ': ';
-  $permissions['manage protected groups'] = [
-    'label' => $prefix . E::ts('manage protected groups'),
+  $permissions['CiviCRM Group Protect'] = [
+    'label' => E::ts('CiviCRM Group Protect'),
+    'description' => E::ts('manage protected groups'),
   ];
 }
 
